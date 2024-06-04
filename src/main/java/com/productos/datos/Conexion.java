@@ -9,7 +9,7 @@ public class Conexion {
     private Statement St;
     private String driver = "org.postgresql.Driver";
     private String user = "postgres";
-    private String pwd = "123456";
+    private String pwd = "juan1234";
     private String cadena = "jdbc:postgresql://localhost:5432/postgres";
     private Connection con;
 

@@ -1,37 +1,87 @@
-body{
-	background: #8080;
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white; /* Blanco tirando a plomo */
 }
-h1{
-	text-align: center;
+
+/* Container */
+.container {
+    padding: 2rem;
 }
-nav ul {
+
+/* Header Styles */
+.header {
+    background-color: black; /* Negro */
+    color: white;
+    padding: 0 1.5rem;
+    height: 56px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 24px;
+    width: 24px;
+    margin-right: 0.5rem;
+}
+
+.header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    background-color: #000; /* Negro */
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 0 1rem;
+}
+
+footer ul {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-nav li {
-    flex: 1; /* Distribuye el espacio equitativamente entre los elementos */
-    text-align: center; /* Alinea el texto al centro de cada <li> */
+footer ul li {
+    margin: 0;
 }
 
-nav li.login {
-    flex: 0; /* Evita que el botón de login se estire */
+footer ul li a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-#content {
-    display: flex; /* Utiliza flexbox para alinear los elementos en una fila */
-    padding: 20px;
-}
-
-section {
-    flex: 1; /* Ocupa la mitad del espacio disponible */
-    padding-right: 10px; /* Espacio entre la sección y el aside */
-}
-
-aside {
-    flex: 1; /* Ocupa la mitad del espacio disponible */
-    padding-left: 10px; /* Espacio entre el aside y la sección */
+footer ul li a:hover {
+    text-decoration: underline;
 }

@@ -24,7 +24,6 @@
 			<ul>
 				<li><a href="index.jsp">Home</a></li>
 				<li><a href="buscar.jsp">Buscar por categoría</a></li>
-				<li><a href="verproductos.jsp">Ver productos</a></li>
 				<li><a href="login.jsp">Login</a></li>
 			</ul>
 		</nav>
